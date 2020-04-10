@@ -1,0 +1,23 @@
+<form method="POST" action="/appearances">
+EPISODE: <select name="episode_id">
+<%@episodes.each do |e|%>
+<option value="<%=e.id%>">
+<%=e.date%>
+</option>
+<%end%>
+</select>
+
+GUEST: <select name="guest_id">
+<%@guests.each do |g|%>
+<option value="<%=g.id%>">
+<%=g.name%>
+<%=g.occupation%>
+</option>
+<%end%>
+</select>
+
+RATING: <input type=text name="number">
+<input type="submit">
+</form>
+
+
