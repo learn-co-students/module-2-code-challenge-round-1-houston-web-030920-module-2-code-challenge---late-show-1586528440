@@ -1,0 +1,29 @@
+<h1> Create new appearance</h1>
+<form method="POST" action="/appearances">
+Guest:<select name="guest_id">
+    <% @guests.each do |guest|%>
+        <option value="<%= guest.id %>"> <%= guest.name %></option>
+        <%end%>
+        </select>
+
+Episode:<select name="episode_id">
+    <% @episodes.each do |episode|%>
+        <option value="<%= episode.id %>"> <%= episode.number %></option>
+        <%end%>
+        </select>
+
+Rating:<select name="rating">
+<option value="1"  > 1</option>
+<option value="2"  > 2</option>
+<option value="3"  > 3</option>
+<option value="4"  > 4</option>
+<option value="5"  > 5</option>
+<option value="6"  > 6</option>
+<option value="7"  > 7</option>
+<option value="8"  > 8</option>
+<option value="9"  > 9</option>
+<option value="10"  > 10</option>
+<input type="submit" >
+</select>
+</form>
+
