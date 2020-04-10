@@ -1,0 +1,9 @@
+<%=label_tag("Appearances:")%><br>
+<ol>
+<%@guest.episodes.each do |e|%>
+<%=label_tag%><br>
+<li><p>Date:<%=link_to e.date, e%></p></li>
+<p>Rating:<%=@rating%></p>
+<%end%>
+</ol>
+

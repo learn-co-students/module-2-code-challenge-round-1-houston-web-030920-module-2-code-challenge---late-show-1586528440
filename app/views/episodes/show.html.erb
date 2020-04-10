@@ -1,0 +1,8 @@
+<%=label_tag("Episode Date:")%><br>
+<%=@episode.date%><br>
+<%=label_tag("Guest:")%><br>
+<ul>
+<%@episode.guests.each do |g|%>
+<li><%=link_to g.name, g%></li>
+<%end%>
+</ul>

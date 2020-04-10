@@ -1,0 +1,9 @@
+<%=form_with(model: @appearance) do |f|%>
+<%=label_tag("Choose a Guest")%><br>
+<%=f.collection_select(:guest_id, @guests, :id, :name)%><br>
+<%=label_tag("Choose an Episode")%><br>
+<%=f.collection_select(:episode_id, @episodes, :id, :number)%><br>
+<%=label_tag("Enter a Rating")%><br>
+<%=f.text_field(:rating)%><br>
+<%=f.submit%>
+<%end%>
