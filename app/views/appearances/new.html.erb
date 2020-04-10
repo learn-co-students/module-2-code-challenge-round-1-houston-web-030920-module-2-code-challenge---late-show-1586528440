@@ -1,0 +1,15 @@
+<%= form_with({model: @appearance}) do |form|%>
+    <h1>Fill out an Appearance form</h1>
+    <label>Select a Guest</label>
+    <%=form.collection_select(:guest_id,Guest.all,:id,:name)%>
+    <br/>
+    <label>Select an Episode</label>
+    <%=form.collection_select(:episode_id,Episode.all,:id,:number)%>
+    <br/>
+    <label>Enter a rating</label>
+    <%=form.text_field(:rating)%>
+
+
+    <%=form.submit("Submit")%>
+
+<%end%>

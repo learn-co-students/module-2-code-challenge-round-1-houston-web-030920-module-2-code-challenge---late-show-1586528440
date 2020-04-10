@@ -1,0 +1,14 @@
+<h1><%=@guest.name%>'s Page</h1>
+
+<h3>Episode Appearances</h3>
+<%@guest.episodes.each do |episode|%>
+    <p>
+    <%="Episode #{episode.number}"%>
+    <br/>
+    Airdate: <%=link_to episode.date, episode_path(episode)%>
+    <br/>
+    <%@appearance = @guest.appearances.where(:episode_id == episode.id)[0]%>
+    Appearance Rating: <%=@appearance.rating%>
+    </p>
+<%end%>
+
