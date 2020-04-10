@@ -15,7 +15,7 @@ In this repo, there is a Rails application with some features built out. Your jo
 
 ## Setup
 
-Before you begin coding your solution, clone this repo and then `cd` into it. Then run `bundle install`, `rails db:migrate`, and `rails db:seed` to install dependencies and set up the database, and run `rails s` to start the server.
+Before you begin coding your solution, clone this repo and then `cd` into it.
 
 ## The Domain
 
@@ -76,6 +76,8 @@ To log that a specific Guest appeared on a certain Episode, we need to create th
 - Episode can have multiple guests
 - Appearance stores a numeric rating
 
+> run `bundle install`, `rails db:migrate`, and `rails db:seed` to install dependencies and set up the database, and run `rails s` to start the server.
+
 ### 2. New Appearance Form
 
 A user can fill out a form to create a new Appearance. They can:
@@ -106,7 +108,7 @@ For each Episode, show the:
 
 Each Episode date should link to the show page for that Episode.
 
-### 5. Appearance Rating Validation
+### 5. Advanced: Appearance Rating Validation
 
 The rating on an Appearance should be between 1 and 5 (inclusive - `1` and `5` are okay).
 
