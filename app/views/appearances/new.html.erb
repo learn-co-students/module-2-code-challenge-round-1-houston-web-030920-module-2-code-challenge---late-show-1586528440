@@ -1,0 +1,28 @@
+<form method="post" action="/appearances">
+
+    Episode:<select name="episode_id">
+        <%@episodes.each do |episode|%>
+            <option value="<%=episode.id%>"><%=episode.number%></option>
+        <%end%>
+    </select></br>
+
+    Guest: <select name="guest_id">
+        <%@guests.each do |guest|%>
+            <option value="<%=guest.id%>"><%=guest.name%></option>
+        <%end%>
+    </select></br>
+
+    Rating: <select name="rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select></br>
+    <input type="submit" value="Log Appearance">
+</form>
