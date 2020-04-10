@@ -1,0 +1,10 @@
+<h3>New Appearance</h3>
+<%= form_with(model: @appearance) do |form| %>
+<%= label_tag("Choose Guest:") %>
+<%= form.collection_select(:guest_id, @guests, :id, :name) %><br>
+<%= label_tag("Choose Episode:") %>
+<%= form.collection_select(:episode_id, @episodes, :id, :date) %><br>
+<%= label_tag("Rating:") %>
+<%= form.text_field(:rating) %><br>
+<%= form.submit %>
+<% end %>
