@@ -1,0 +1,9 @@
+<h1><%= @guest.id %></h1>
+<label>Air Date:</label>
+<p><%= @guest.date %></p>
+<br>
+<label>Guests:</label>
+<% @guest.appearances.each do | appearance | %>
+    <li><%= appearance.episode.date %></li>
+    <li><%= appearance.episode.rating %></li>
+<% end %>

@@ -68,34 +68,34 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 
 
-### 1. Appearance Model
+### 1. Appearance Model - DONE
 
 To log that a specific Guest appeared on a certain Episode, we need to create the Appearance model. **Make the necessary updates to the schema and models** so that:
 
-- Guest can appear on many episodes
-- Episode can have multiple guests
-- Appearance stores a numeric rating
+DONE- Guest can appear on many episodes
+DONE- Episode can have multiple guests
+DONE- Appearance stores a numeric rating
 
 > run `rails db:migrate` and `rails db:seed` to set up the database, and run `rails s` to start the server.
 
-### 2. New Appearance Form
+### 2. New Appearance Form - DONE
 
 A user can fill out a form to create a new Appearance. They can:
 
-- Choose an existing guest from a select dropdown
-- Choose an existing episode from a select dropdown
-- Enter a numeric rating
-- Submit the form
+DONE- Choose an existing guest from a select dropdown
+DONE- Choose an existing episode from a select dropdown
+DONE- Enter a numeric rating
+DONE- Submit the form
 
 After submitting the form, the user should be redirected to the selected episode's show page.
 
-### 3. Episode Show Page
+### 3. Episode Show Page - DONE
 
 On the episode show page, a user should see:
 
-- Episode date
-- A list of the guests who were on that episode
-- Each guest's name should link to the Guest Show page
+DONE- Episode date
+DONE- A list of the guests who were on that episode
+DONE- Each guest's name should link to the Guest Show page
 
 ### 4. Guest Show Page Episode links
 

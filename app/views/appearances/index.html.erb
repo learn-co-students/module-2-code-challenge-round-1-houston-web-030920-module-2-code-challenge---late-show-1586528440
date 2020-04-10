@@ -1,0 +1,11 @@
+<h1>All Appearances</h1>
+
+<ul>
+  <% @appearances.each do | appearance | %>
+
+    <label><%= appearance.episode.number %></label>
+      <li><%= appearance.episode.date %></li>
+      <li><%= link_to(appearance.guest.name, appearance) %></li>
+      <li><%= appearance.rating %></li>
+  <% end %>
+</ul>
