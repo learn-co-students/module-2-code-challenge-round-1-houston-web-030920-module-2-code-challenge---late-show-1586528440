@@ -15,7 +15,7 @@ In this repo, there is a Rails application with some features built out. Your jo
 
 ## Setup
 
-Before you begin coding your solution, clone this repo and then `cd` into it.
+Before you begin coding your solution, clone this repo and then `cd` into it. Run `bundle install` to install dependencies.
 
 ## The Domain
 
@@ -76,7 +76,7 @@ To log that a specific Guest appeared on a certain Episode, we need to create th
 - Episode can have multiple guests
 - Appearance stores a numeric rating
 
-> run `bundle install`, `rails db:migrate`, and `rails db:seed` to install dependencies and set up the database, and run `rails s` to start the server.
+> run `rails db:migrate` and `rails db:seed` to set up the database, and run `rails s` to start the server.
 
 ### 2. New Appearance Form
 
