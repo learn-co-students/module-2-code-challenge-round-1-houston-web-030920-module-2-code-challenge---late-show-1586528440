@@ -1,0 +1,12 @@
+<%= form_with(model: @appearance) do |form|%>
+  <label>Select A Guest</label>
+  <%= form.collection_select(:guest_id, @guests, :id, :name)%>
+
+  <label>Select An Episode</label>
+  <%= form.collection_select(:episode_id, @episodes, :id, :date)%>
+
+  <label>Enter a rating</label>
+  <%= form.text_field(:rating)%>
+
+  <%= form.submit()%>
+<%end %>
