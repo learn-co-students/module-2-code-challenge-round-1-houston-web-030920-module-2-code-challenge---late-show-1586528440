@@ -1,0 +1,16 @@
+<h1> <%= @guest.name %> </h1>
+<label>All Episodes <%= @guest.name %> has appeared in: </label><br>
+<% @guest.episodes.each do |episode| %>
+    <label>Episode Date: </label>
+    <%= link_to(episode.date, episode) %>
+    <br>
+    <label>Rating: </label>
+    <% @appearances.each do |app|%>
+        <% if app.episode_id == episode.id %> 
+        <%= app.rating %>
+        <% end %>
+        <% end %>
+    <br>
+    <br>
+<% end %>
+<br>

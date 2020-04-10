@@ -1,0 +1,20 @@
+
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+        <li class="error"><%=error %> </li>
+        <br>
+    <% end %>
+<% end %>
+<h1>Create a New Appearance</h1>
+<%= form_with(model: @appearance) do |form| %>
+<label>Choose a Guest</label>
+<%= form.collection_select(:guest_id, @guests, :id, :name) %>
+<br>
+<label>Choose an Episode</label>
+<%= form.collection_select(:episode_id, @episodes, :id, :number) %>
+<br>
+<label>Give the Appearance a 1-5 Rating</label>
+<%= form.text_field(:rating) %>
+<br>
+<%= form.submit value="submit" %>
+<% end %>

@@ -1,0 +1,12 @@
+<% @appearances.each do |app| %>
+<label>Guest:       </label>
+<%= app.guest.name %>
+<br>
+<label>Episode Number:        </label>
+<%= app.episode.number %>
+<br>
+<label>Episode Date: </label>
+<%= app.episode.date %>
+<br>
+<br>
+<% end %>
